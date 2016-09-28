@@ -20,4 +20,4 @@ RUN apk --update add \
 VOLUME ["/source"]
 WORKDIR /source
 ENTRYPOINT ["/usr/local/bin/optipng"]
-CMD ["-quiet", "-o7", "*.png"]
+CMD ["-quiet", "-strip", "all", "-f4", "-o7", "-preserve", "*.png"]
